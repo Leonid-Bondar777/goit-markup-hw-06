@@ -1,5 +1,4 @@
 /*==============decor-none============*/
-
 .list-text-decoration,
 .manu,
 .manu-contacts,
@@ -12,7 +11,9 @@
 .manu-contacts-link,
 .manu-link,
 .our-team-icon-link,
-.footer-icon-list {
+.footer-icon-list,
+.mobile-manu-link,
+.mobile-manu-contacts-link {
     text-decoration: none;
 }
 
@@ -44,6 +45,8 @@ li {
     margin-top: 0;
     margin-bottom: 0;
     padding: 0;
+    list-style-type: none;
+
 }
 
 button {
@@ -89,6 +92,7 @@ body {
 
 
 /* ============== MOBILE OUR TEAM STYLES ============== */
+
 
 .our-team-icon {
     display: flex;
@@ -184,6 +188,9 @@ body {
     }
 }
 
+/* ============== MOBILE OUR TEAM STYLES ============== */
+
+/* ============== TABLET OUR TEAM STYLES ============== */
 @media screen and (min-width: 768px) {
 
     .our-team-container {
@@ -210,6 +217,9 @@ body {
 
 }
 
+/* ============== TABLET OUR TEAM STYLES ============== */
+
+/* ============== DESKTOP OUR TEAM STYLES ============== */
 @media screen and (min-width: 1158px) {
     .our-team-container {
         width: 1158px;
@@ -227,7 +237,136 @@ body {
 
 }
 
-/*==================header-container=================*/
+/* ============== DESKTOP OUR TEAM STYLES ============== */
+
+/* ============== MOBILE HEADER STYLES ============== */
+
+/*================ MOBILE MENU================= */
+
+@media screen and (max-width: 767px) {
+
+    .header-mobile-menu-open-btn {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        color: #111;
+        line-height: 0;
+
+
+    }
+
+    .heder-mobile-menu-wrapper {
+        z-index: 999999999;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #FFF;
+        transition: transform 250ms linear, visibility 250ms linear;
+        transform: translateX(100%);
+    }
+
+    .heder-mobile-menu-wrapper.is-open {
+        transform: translateX(0);
+    }
+
+    .mobile-menu-container {
+        position: relative;
+
+
+    }
+
+    .heder-modal-close-btn {
+        fill: #111;
+        background: transparent;
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 0;
+        cursor: pointer;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .heder-modai-close-btn-icon {
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .mobile-manu-nav {
+        display: flex;
+        justify-content: flex-start;
+        padding-top: 72px;
+    }
+
+    .mobile-manu-list {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        padding-bottom: 168px;
+    }
+
+    .mobile-manu-link {
+        color: var(--OCEAN, #111);
+        font-family: Roboto;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.11;
+        letter-spacing: 0.03em;
+        text-transform: capitalize;
+
+
+    }
+
+    .mobile-manu-contacts {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        padding-bottom: 48px;
+    }
+
+
+    .mobile-manu-contacts-link {
+        color: var(--SLATE, #434455);
+        font-family: Roboto;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1;
+        letter-spacing: 0.02em;
+
+    }
+
+    .mobile-manu-link-accent-color {
+        color: var(--OCEAN, #404BBF);
+    }
+
+
+
+
+}
+
+@media screen and (min-width: 768px) {
+    .heder-mobile-menu-wrapper {
+        display: none;
+
+    }
+
+    .header-mobile-menu-open-btn {
+        display: none;
+    }
+}
+
+/*================ MOBILE MENU================= */
+
 
 .pege-header {
     border-bottom: 1px solid #e7e9fc;
@@ -235,17 +374,19 @@ body {
     box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
         0px 1px 1px 0px rgba(46, 47, 66, 0.16),
         0px 2px 1px 0px rgba(46, 47, 66, 0.08);
-
     top: 0;
-    z-index: 99;
+
 }
 
 .header-container {
     display: flex;
     align-items: center;
-    width: 1158px;
-    height: 72px;
-    flex-shrink: 0;
+    justify-content: space-between;
+    /* width: 1158px; */
+    /* height: 72px; */
+    height: 56px;
+    /* flex-shrink: 0; */
+
 }
 
 .pege-nav-navigetion {
@@ -331,8 +472,9 @@ body {
 }
 
 .manu-list {
+    display: none;
     gap: 40px;
-    display: flex;
+    /* display: flex; */
 }
 
 /*==============manu-contacts=================*/
@@ -343,7 +485,8 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-align: left;
-    display: flex;
+    display: none;
+    /* display: flex; */
     gap: 40px;
 }
 
@@ -353,7 +496,8 @@ body {
 
 .manu-contacts-link {
     color: rgba(67, 68, 85, 1);
-    display: inline-block;
+    /* display: inline-block; */
+    display: none;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
@@ -367,7 +511,25 @@ body {
     color: #404bbf;
 }
 
-/*=================ORDER================*/
+/* ============== MOBILE HEADER STYLES ============== */
+
+
+
+/* ============== TABLET HEADER STYLES ============== */
+@media screen and (min-width: 768px) {}
+
+/* ============== TABLET HEADER STYLES ============== */
+
+
+
+/* ============== DESKTOP HEADER STYLES ============== */
+@media screen and (min-width: 1158px) {}
+
+/* ============== DESKTOP HEADER STYLES ============== */
+
+
+
+/* ============== MOBILE ORDER STYLES ============== */
 
 .order-service {
     padding-top: 188px;
