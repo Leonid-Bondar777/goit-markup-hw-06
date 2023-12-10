@@ -239,7 +239,6 @@ body {
 
 /* ============== DESKTOP OUR TEAM STYLES ============== */
 
-/* ============== MOBILE HEADER STYLES ============== */
 
 /*================ MOBILE MENU================= */
 
@@ -380,9 +379,9 @@ body {
 
 }
 
-
 /*================ MOBILE MENU================= */
 
+/* ============== MOBILE HEADER STYLES ============== */
 
 .pege-header {
     border-bottom: 1px solid #e7e9fc;
@@ -515,6 +514,7 @@ body {
     color: #404bbf;
 }
 
+
 /* ============== MOBILE HEADER STYLES ============== */
 
 
@@ -565,6 +565,7 @@ body {
 
 
 /* ============== DESKTOP HEADER STYLES ============== */
+
 @media screen and (min-width: 1158px) {
     .manu-contacts {
 
@@ -655,24 +656,16 @@ body {
     background-color: #404bbf;
 }
 
-/*=========Section-Advantages=================*/
+/* ============== MOBILE Advantages STYLES ============== */
+
 
 .advantages-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 264px;
-    height: 112px;
-    flex-shrink: 0;
-    border-radius: 4px;
-    border: 1px solid var(--LIGHT-SLATE, #8e8f99);
-    background: var(--CLOUD, #f4f4fd);
-    margin-bottom: 8px;
+    display: none;
 }
 
 .advantages {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 .visually-hidden {
@@ -689,28 +682,111 @@ body {
 }
 
 .advantages-title {
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.2;
+    text-align: center;
+    color: var(--NAVY-BLUE, #2E2F42);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
     letter-spacing: 0.02em;
+    text-transform: capitalize;
     margin-bottom: 8px;
-    color: #2e2f42;
+}
+
+.advantages-paragraph {
+    color: var(--SLATE, #434455);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+
+}
+
+.desktop-list-text-decoration {
+    display: flex;
+    flex-direction: column;
+    row-gap: 72px;
+
 }
 
 .advantages-link {
     display: flex;
-    width: 264px;
+    width: auto;
     flex-direction: column;
 }
 
-.advantages-paragraph {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+
+/* ============== MOBILE Advantages STYLES ============== */
+
+/* ============== TABLET Advantages STYLES ============== */
+
+@media screen and (min-width: 768px) {
+    .advantages-link {
+
+        width: 356px;
+
+    }
+
+    .desktop-list-text-decoration {
+        flex-direction: row;
+    }
+
+    .advantages-title {
+        text-align: left;
+    }
+
+
 }
 
-/*===============Section-Our-Team===================*/
+/* ============== TABLET Advantages STYLES ============== */
+
+/* ============== DESKTOP Advantages STYLES ============== */
+
+@media screen and (min-width: 1158px) {
+    .advantages-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 264px;
+        height: 112px;
+        flex-shrink: 0;
+        border-radius: 4px;
+        border: 1px solid var(--LIGHT-SLATE, #8e8f99);
+        background: var(--CLOUD, #f4f4fd);
+        margin-bottom: 8px;
+    }
+
+    .advantages-paragraph {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+    }
+
+    .advantages-title {
+
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        margin-bottom: 8px;
+        color: #2e2f42;
+    }
+
+    .advantages {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .advantages-link {
+
+        width: 264px;
+
+    }
+
+}
+
+/* ============== DESKTOP Advantages STYLES ============== */
+
 
 
 
