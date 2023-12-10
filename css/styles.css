@@ -242,6 +242,7 @@ body {
 
 /*================ MOBILE MENU================= */
 
+
 @media screen and (max-width: 767px) {
 
     .header-mobile-menu-open-btn {
@@ -382,6 +383,14 @@ body {
 /*================ MOBILE MENU================= */
 
 /* ============== MOBILE HEADER STYLES ============== */
+.manu-list {
+    display: none;
+}
+
+.manu-contacts {
+    display: none;
+}
+
 
 .pege-header {
     border-bottom: 1px solid #e7e9fc;
@@ -395,7 +404,9 @@ body {
 
 .header-container {
     height: 56px;
-
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
 }
 
@@ -439,80 +450,7 @@ body {
     text-align: left;
 }
 
-/*=====================MANU====================*/
 
-.manu-link {
-    color: #2e2f42;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    display: block;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.manu-link:hover,
-.manu-link:focus {
-    color: #404bbf;
-}
-
-.current {
-    color: #404bbf;
-}
-
-.manu-link .current::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -1px;
-    display: block;
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-    background-color: #404bbf;
-}
-
-.icon-manu {
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-    background: #404bbf;
-}
-
-.manu-list {
-
-    gap: 40px;
-
-}
-
-/*==============manu-contacts=================*/
-
-.manu-contacts {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    text-align: left;
-
-}
-
-
-
-.manu-contacts-link {
-    color: rgba(67, 68, 85, 1);
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.5;
-    letter-spacing: 0.32px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.manu-contacts-link:hover,
-.manu-contacts-link:focus {
-    color: #404bbf;
-}
 
 
 /* ============== MOBILE HEADER STYLES ============== */
@@ -520,7 +458,43 @@ body {
 
 
 /* ============== TABLET HEADER STYLES ============== */
+
+
 @media screen and (min-width: 768px) {
+
+
+
+    .icon-manu {
+        width: 100%;
+        height: 4px;
+        border-radius: 2px;
+        background: #404bbf;
+    }
+
+
+    .manu-list {
+
+        gap: 40px;
+
+    }
+
+
+    .manu-link {
+
+        color: var(--NAVY-BLUE, #2E2F42);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        display: block;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .studio-line {
+        color: #4d5ae5;
+    }
 
     .heder-mobile-menu-wrapper {
         display: none;
@@ -551,12 +525,51 @@ body {
     }
 
     .header-container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
 
+        height: 72px
+    }
 
+    .manu-link .current::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        display: block;
+        width: 100%;
+        height: 4px;
+        border-radius: 2px;
+        background-color: #404bbf;
+    }
 
+    /*==============manu-contacts=================*/
+
+    .manu-contacts {
+
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        text-align: left;
+
+    }
+
+    .manu-contacts-link {
+        color: rgba(67, 68, 85, 1);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+        letter-spacing: 0.32px;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .manu-link:hover,
+    .manu-link:focus {
+        color: #404bbf;
+    }
+
+    .manu-contacts-link:hover,
+    .manu-contacts-link:focus {
+        color: #404bbf;
     }
 }
 
@@ -592,7 +605,6 @@ body {
     .header-container {
 
         width: auto;
-        height: 72px;
         flex-shrink: 0;
 
     }
