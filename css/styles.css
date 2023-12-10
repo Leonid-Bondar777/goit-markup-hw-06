@@ -349,21 +349,37 @@ body {
         color: var(--OCEAN, #404BBF);
     }
 
+    .mobile-icon-list {
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+        margin: 0;
+        padding-bottom: 40px;
+    }
 
+    .mobile-icon-item {
+        width: 40px;
+        height: 40px;
+    }
+
+    .mobile-icon-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        background-color: #4d5ae5;
+        border-radius: 50%;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .mobile-icon-style {
+        fill: rgba(244, 244, 253, 1);
+    }
 
 
 }
 
-@media screen and (min-width: 768px) {
-    .heder-mobile-menu-wrapper {
-        display: none;
-
-    }
-
-    .header-mobile-menu-open-btn {
-        display: none;
-    }
-}
 
 /*================ MOBILE MENU================= */
 
@@ -379,13 +395,8 @@ body {
 }
 
 .header-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    /* width: 1158px; */
-    /* height: 72px; */
     height: 56px;
-    /* flex-shrink: 0; */
+
 
 }
 
@@ -472,9 +483,9 @@ body {
 }
 
 .manu-list {
-    display: none;
+
     gap: 40px;
-    /* display: flex; */
+
 }
 
 /*==============manu-contacts=================*/
@@ -485,24 +496,17 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-align: left;
-    display: none;
-    /* display: flex; */
-    gap: 40px;
+
 }
 
-.manu-contacts-title {
-    padding: 24px 0 24px;
-}
+
 
 .manu-contacts-link {
     color: rgba(67, 68, 85, 1);
-    /* display: inline-block; */
-    display: none;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.32px;
-    padding: 24px 0 24px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -516,14 +520,82 @@ body {
 
 
 /* ============== TABLET HEADER STYLES ============== */
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 768px) {
+
+    .heder-mobile-menu-wrapper {
+        display: none;
+
+    }
+
+    .header-mobile-menu-open-btn {
+        display: none;
+    }
+
+    .manu-list {
+
+
+        display: flex;
+    }
+
+    .manu-contacts {
+
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .manu-contacts-link {
+
+        display: inline-block;
+
+    }
+
+    .header-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+
+
+    }
+}
 
 /* ============== TABLET HEADER STYLES ============== */
 
 
 
 /* ============== DESKTOP HEADER STYLES ============== */
-@media screen and (min-width: 1158px) {}
+@media screen and (min-width: 1158px) {
+    .manu-contacts {
+
+        gap: 40px;
+    }
+
+
+    .manu-contacts-title {
+        padding: 24px 0 24px;
+    }
+
+    .manu-contacts-link {
+
+        padding: 24px 0 24px;
+
+    }
+
+    .manu-contacts {
+
+        flex-direction: row-reverse;
+
+    }
+
+    .header-container {
+
+        width: auto;
+        height: 72px;
+        flex-shrink: 0;
+
+    }
+}
 
 /* ============== DESKTOP HEADER STYLES ============== */
 
