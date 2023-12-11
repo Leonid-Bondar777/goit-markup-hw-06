@@ -1201,9 +1201,7 @@ body {
         width: 264px;
     }
 
-    .footer-title-subscribe {
-        margin-left: 80px;
-    }
+
 
     .modai-subscribe-button {
         display: flex;
@@ -1216,6 +1214,10 @@ body {
 /*=============DESKTOP-FOOTE===============*/
 
 @media screen and (min-width: 1158px) {
+    .footer-title-subscribe {
+        margin-left: 80px;
+    }
+
     .footer-content {
         padding-top: 100px;
         padding-bottom: 100px;
