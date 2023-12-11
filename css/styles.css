@@ -432,9 +432,7 @@ body {
     text-decoration: none;
 }
 
-.footer-logo {
-    margin-bottom: 16px;
-}
+
 
 .logo-accent {
     color: #2e2f42;
@@ -1002,26 +1000,43 @@ body {
 /*=============DESKTOP-OVERLAY===============*/
 
 
-/*=============FOOTER==============  */
+/* ============== MOBILE-FOOTE ============== */
 
-.footer-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+.footer-content {
+
+    /* padding-top: 100px;
+    padding-bottom: 100px; */
+    background: rgba(46, 47, 66, 1);
+
 }
 
+.footer-container {
+    /* display: flex;
+    justify-content: space-between;
+    align-items: baseline; */
+    padding: 96px 0;
+}
+
+
+
 .footer-lodo-content {
-    margin-right: 120px;
-    width: 264px;
-    height: 112px;
-    flex-shrink: 0;
+    /* margin-right: 120px; */
+    /* width: 264px; */
+    /* height: 112px; */
+    /* flex-shrink: 0; */
+
+}
+
+.footer-logo {
+    margin-bottom: 16px;
 }
 
 .footer-icon-list {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 16px;
-    margin: 0;
+    /* margin: 0; */
 }
 
 .footer-icon-item {
@@ -1057,19 +1072,14 @@ body {
     background-color: #31d0aa;
 }
 
-.footer-content {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    background: rgba(46, 47, 66, 1);
-}
+
 
 .footer-title {
     color: var(--WHITE, #fff);
     font-size: 16px;
-    font-style: normal;
     font-weight: 500;
-    line-height: 24px;
-    letter-spacing: 0.32px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
     margin-bottom: 16px;
 }
 
@@ -1080,16 +1090,19 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-align: left;
-    max-width: 264px;
+    /* max-width: 264px; */
+    width: 264px;
+    margin-bottom: 72px;
 }
 
 /*=============footer-subscribe==============  */
 
 .subscribe-form {
-    display: flex;
+    /* display: flex;
     align-items: center;
-    gap: 24px;
+    gap: 24px; */
 }
+
 
 .modai-title-form-subscribe {
     color: var(--WHITE, #fff);
@@ -1097,15 +1110,20 @@ body {
     font-weight: 400;
     letter-spacing: 0.04em;
     line-height: 1.5;
-    width: 264px;
+    /* width: 264px; */
+    width: 288px;
     height: 40px;
     padding-left: 16px;
     border-radius: 4px;
-    border: 1px solid var(--WHITE, #fff);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     background-color: transparent;
-    margin-left: 80px;
+    /* margin-left: 80px; */
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    flex-shrink: 0;
+    /* margin-right: 24px; */
+    border: 1px solid var(--WHITE, #FFF);
+    opacity: 0.3;
+
 }
 
 .footer-title-subscribe {
@@ -1115,7 +1133,7 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     margin-bottom: 16px;
-    margin-left: 80px;
+    /* margin-left: 80px; */
 }
 
 .modai-title-form-subscribe::placeholder {
@@ -1123,19 +1141,11 @@ body {
     padding: 8px 16px;
 }
 
-.modai-title-form-subscribe {
-    border-radius: 4px;
-    border: 1px solid var(--WHITE, #fff);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    background-color: transparent;
-    width: 264px;
-    height: 40px;
-    flex-shrink: 0;
-    margin-right: 24px;
-}
+.modai-title-form-subscribe {}
 
 .modai-subscribe-button {
-    display: flex;
+    /* display: flex; */
+    display: inline-flex;
     color: var(--WHITE, #fff);
     text-align: center;
     font-size: 16px;
@@ -1150,7 +1160,154 @@ body {
     background: var(--IRIS, #4d5ae5);
     border: none;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin-top: 16px;
+
 }
+
+
+
+
+@media screen and (max-width: 767px) {
+
+    .footer-content {
+        text-align: center;
+    }
+
+    .footer-lodo-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-subscribe {
+        margin-top: 72px;
+    }
+
+    .footer-logo {
+        margin-right: 0;
+    }
+}
+
+
+
+/* ============== TABLET-FOOTE ============== */
+
+
+@media screen and (min-width: 768px) {
+
+    .footer-content {
+
+        /* padding-top: 100px;
+        padding-bottom: 100px; */
+
+    }
+
+    .footer-container {
+        display: flex;
+        flex-wrap: wrap;
+        /* justify-content: space-between; */
+        align-items: baseline;
+        width: 584px;
+        align-items: first baseline;
+        flex-direction: row;
+        gap: 24px;
+
+    }
+
+
+
+    .footer-lodo-content {
+        /* margin-right: 120px; */
+        width: 264px;
+        height: 112px;
+        flex-shrink: 0;
+
+    }
+
+    .footer-icon-list {
+        margin: 0;
+    }
+
+    .footer-advice {
+        max-width: 264px;
+    }
+
+    .subscribe-form {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .modai-title-form-subscribe {
+
+        width: 264px;
+        /* margin-left: 80px; */
+        /* margin-right: 24px; */
+    }
+
+    .footer-title-subscribe {
+        margin-left: 80px;
+    }
+
+    .modai-subscribe-button {
+        display: flex;
+        margin-top: 0;
+
+    }
+
+}
+
+/* @media screen and (max-width: 767px) {
+    .footer-container {
+        flex-wrap: wrap;
+        align-items: baseline;
+        width: 584px;
+        align-items: first baseline;
+        flex-direction: row;
+        gap: 24px;
+
+    }
+} */
+
+/* ============== TABLET-FOOTE ============== */
+
+
+
+/*=============DESKTOP-FOOTE===============*/
+
+@media screen and (min-width: 1158px) {
+    .footer-content {
+        padding-top: 100px;
+        padding-bottom: 100px;
+
+
+    }
+
+    .footer-container {
+        width: 1158px;
+        flex-wrap: nowrap;
+        justify-content: center;
+        gap: 0;
+    }
+
+    .footer-lodo-content {
+        margin-right: 120px;
+    }
+
+    .modai-title-form-subscribe {
+        margin-left: 80px;
+        margin-right: 24px;
+
+    }
+
+
+}
+
+
+/*=============DESKTOP-FOOTE===============*/
+
+
+
 
 /* =======beckdrop========*/
 
