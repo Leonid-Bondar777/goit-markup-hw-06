@@ -620,7 +620,7 @@ body {
     background-image: linear-gradient(to bottom,
             rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)),
-        url(../images/portfolio/people-office.jpg);
+        url(../images/portfolio/mobile/people-office320.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -660,15 +660,31 @@ body {
     text-transform: capitalize;
 }
 
+@media screen and (min-resolution: 192dpi) and (max-width: 767px),
+screen and (min-resolution: 2dppx) and (max-width: 767px),
+screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
+    .order-service {
+        background-image: linear-gradient(to bottom,
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/portfolio/mobile/people-office320@2x.jpg);
+    }
+}
+
 /* ============== MOBILE ORDER STYLES ============== */
 
 /* ============== TABLET ORDERSTYLES ============== */
+
 
 @media screen and (min-width: 768px) {
 
     .order-service {
         max-width: 768px;
         padding: 112px 0;
+        background-image: linear-gradient(to bottom,
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/portfolio/tablet/people-office\ 768.jpg);
     }
 
     .order-service-title {
@@ -683,9 +699,21 @@ body {
     }
 }
 
+@media screen and (min-resolution: 192dpi) and (min-width: 767px),
+screen and (min-resolution: 2dppx) and (min-width: 767px),
+screen and (min-device-pixel-ratio: 2) and (min-width: 767px) {
+    .order-service {
+        background-image: linear-gradient(to bottom,
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/portfolio/tablet/people-office\ 768@2x.jpg);
+    }
+}
+
 /* ============== TABLET ORDER STYLES ============== */
 
 /* ============== DESKTOP ORDER STYLES ============== */
+
 
 @media screen and (min-width: 1158px) {
 
@@ -694,6 +722,10 @@ body {
         padding-top: 188px;
         padding-bottom: 188px;
         max-width: 1440px;
+        background-image: linear-gradient(to bottom,
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/portfolio/desktop/people-office\ 1158.jpg);
     }
 
     .order-service-title {
@@ -705,6 +737,17 @@ body {
     .order-service-button:hover,
     .order-service-button:focus {
         background-color: #404bbf;
+    }
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 1158px),
+screen and (min-resolution: 2dppx) and (min-width: 1158px),
+screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
+    .order-service {
+        background-image: linear-gradient(to bottom,
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/portfolio/desktop/people-office\ 1158@2x.jpg);
     }
 }
 
