@@ -360,7 +360,7 @@ body {
         justify-content: space-between;
         gap: 40px;
         margin: 0;
-        padding-bottom: 40px;
+        /* padding-bottom: 40px; */
     }
 
     .mobile-icon-item {
