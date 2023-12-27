@@ -1299,6 +1299,8 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
 
 /* =======beckdrop========*/
 
+
+
 .backdrop {
     opacity: 0;
     visibility: hidden;
@@ -1548,4 +1550,8 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
 .modai-title-form-checkbox-button:hover {
     border: none;
     background: var(--OCEAN, #404bbf);
+}
+
+.active {
+    display: block;
 }
