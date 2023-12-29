@@ -1,19 +1,22 @@
 /*==============decor-none============*/
-.list-text-decoration,
+/* .list-text-decoration,
 .manu,
 .manu-contacts,
 .our-portfolio-link,
 .our-team-icon,
 .footer-icon-list {
     list-style-type: none;
-}
+} */
 
-.manu-contacts-link,
+/* .manu-contacts-link,
 .manu-link,
 .our-team-icon-link,
 .footer-icon-list,
 .mobile-manu-link,
 .mobile-manu-contacts-link {
+    
+} */
+a {
     text-decoration: none;
 }
 
